@@ -1,7 +1,7 @@
 import { ADD_MONEY, REMOVE_MONEY } from "../actions" ;
 import { addToList } from "./helpers.js";
 
-const pocketMoney = (state = 50, action) => {
+const pocketmoney = (state = 50, action) => {
   switch(action.type) {
     case ADD_MONEY:
       let item = addToList(action.id);
@@ -16,4 +16,4 @@ const pocketMoney = (state = 50, action) => {
   } 
 } 
 
-export default pocketMoney;
+export default pocketmoney;

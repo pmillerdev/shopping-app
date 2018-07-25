@@ -1,7 +1,7 @@
 import { ADD_GROCERY, REMOVE_GROCERY } from "../actions";
 import { addToList } from "./helpers.js";
 
-const shoppingBag = (state =[], action) => {
+const shoppingbag = (state =[], action) => {
   switch(action.type) {
     case ADD_GROCERY:
       let shoppingbag = [...state, addToList(action.id)];
@@ -14,4 +14,4 @@ const shoppingBag = (state =[], action) => {
   }
 }
 
-export default shoppingBag;
+export default shoppingbag;

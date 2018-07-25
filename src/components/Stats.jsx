@@ -22,14 +22,14 @@ class Stats extends Component {
   };  
 
   render() {
-    const bag = this.props.shoppingBag;
+    const shopping = this.props.shoppingbag;
     return (
       <div className="col-md-3 bg-danger section">
       <h2 className="text-center">Shopping Statistics</h2>
         <ul className="list-group">
-          <li className="list-group-item">Cost - £{this.getTotalCost(bag)}</li>
-          <li className="list-group-item">Calories - {this.getTotalCalories(bag)} kcal</li>
-          <li className="list-group-item">Weight - {this.getTotalWeight(bag)} mg</li>
+          <li className="list-group-item">Cost - £{this.getTotalCost(shopping)}</li>
+          <li className="list-group-item">Calories - {this.getTotalCalories(shopping)} kcal</li>
+          <li className="list-group-item">Weight - {this.getTotalWeight(shopping)} mg</li>
         </ul>        
       </div>
     )
@@ -38,7 +38,7 @@ class Stats extends Component {
 
 const mapStateToProps = state => {
   return {
-    shoppingBag: state.shoppingBag
+    shoppingbag: state.shoppingbag
   }
 }
 

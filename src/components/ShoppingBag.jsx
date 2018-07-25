@@ -7,9 +7,9 @@ import { addGroceryById, removeGroceryById, addMoneyById } from "../actions";
 class ShoppingBag extends Component {
 
   displayShoppingBag = () => {
-    return this.props.shopping.length > 0 ? (
+    return this.props.shoppingbag.length > 0 ? (
       <ul className="list-group">
-        {this.props.shopping.map((item) => (
+        {this.props.shoppingbag.map((item) => (
             <li className="list-group-item" key={item.id} 
             onClick={() => {
               this.props.removeGroceryById(item.id);
@@ -37,7 +37,7 @@ class ShoppingBag extends Component {
 
 const mapStateToProps = state => {
   return {
-    shopping: state.shoppingBag
+    shoppingbag: state.shoppingbag
   }
 }
 

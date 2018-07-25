@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 
 import { addGroceryById, removeMoneyById } from "../actions";
 
-class Grocery extends Component {
+class Groceries extends Component {
   render() {
     return (
       <div className="col-md-4 bg-info section">
       <h2 className="text-center">Grocery Items</h2>
         <ul className="list-group">
-          {this.props.grocery.map((item) => (
+          {this.props.groceries.map((item) => (
             <li className="list-group-item" key={item.id}
               onClick={() => {
                 this.props.addGroceryById(item.id);
@@ -27,9 +27,9 @@ class Grocery extends Component {
 
 const mapStateToProps = state => {
   return {
-    grocery: state.grocery
+    groceries: state.groceries
   }
 }
 
 
-export default connect(mapStateToProps, { addGroceryById, removeMoneyById })(Grocery);
+export default connect(mapStateToProps, { addGroceryById, removeMoneyById })(Groceries);

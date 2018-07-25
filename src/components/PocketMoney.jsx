@@ -15,7 +15,7 @@ class PocketMoney extends Component {
 
 const mapStateToProps = state => {
   return {
-    money: state.pocketMoney
+    money: state.pocketmoney
   }
 };
 
