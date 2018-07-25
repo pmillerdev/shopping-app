@@ -4,5 +4,4 @@ An app that allows the user to move items in to a shopping bag/cart which then u
 
 Technologies used: React, Redux, React-Redux, React-Bootstrap
 
-
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
