@@ -24,7 +24,7 @@ class Stats extends Component {
   render() {
     const bag = this.props.shoppingBag;
     return (
-      <div className="col-md-4">
+      <div className="col-md-3 bg-danger section">
       <h2 className="text-center">Shopping Statistics</h2>
         <ul className="list-group">
           <li className="list-group-item">Cost - £{this.getTotalCost(bag)}</li>

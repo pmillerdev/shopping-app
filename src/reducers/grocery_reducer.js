@@ -5,7 +5,6 @@ import groceryItemsList from "../data/groceryItems.json";
 const grocery = (state = groceryItemsList, action) => {
   switch(action.type) {
     case ADD_GROCERY:
-      console.log("A grocery was added", action);
       let grocery = state.filter(item => item.id !== action.id);
       return grocery;
     case REMOVE_GROCERY:
