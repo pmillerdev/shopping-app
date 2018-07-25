@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { composeWithDevTools } from 'redux-devtools-extension';
+
 import rootReducer from "./reducers";
 
 const store = createStore(rootReducer, composeWithDevTools());
