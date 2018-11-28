@@ -1,6 +1,6 @@
 # Shopping App #
 
-An app that allows the user to move items in to a shopping bag/cart which then updates the data in real time.
+A basic app that allows the user to move items in to a shopping bag/cart which then updates the data in real time.
 
 Technologies used: React, Redux, React-Redux, React-Bootstrap
 
