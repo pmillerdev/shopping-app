@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 import Jumbotron from "./components/Jumbotron";
 import PocketMoney from "./components/PocketMoney";

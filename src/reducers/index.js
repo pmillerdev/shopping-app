@@ -7,7 +7,7 @@ import { combineReducers } from "redux";
 const rootReducer = combineReducers({
   groceries,
   shoppingbag,
-  pocketmoney
+  pocketmoney,
 });
 
 export default rootReducer;
